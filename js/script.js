@@ -5,7 +5,5 @@ window.onload = function(){
 		print = print+"<tr><th>"+String(dic[i][0])+"</th><th>"+String(dic[i][1])+"</th></tr>";
 	}
 	print = print+"</table>";
-	alert(dic);
-	alert(print);
 	document.getElementById('table').innerHTML = print;
 }
