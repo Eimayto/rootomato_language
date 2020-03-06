@@ -20,7 +20,7 @@ window.onload = function(){
 			dictionary[i][0] = word[1];
 			dictionary[i++][1] = word[2];
 		}
-		var print = "<table border="1">";
+		var print = "<table border='1'>";
 		for(var i = 0; i < dictionary.length; i++){
 			print = print+"<tr><th>"+String(dictionary[i][0])+"</th><th>"+String(dictionary[i][1])+"</th></tr>";
 		}
