@@ -1,6 +1,5 @@
 var dictonary = {};
 window.onload = function(){
-	message.innerHTML = "";
 	var file = "https://raw.githubusercontent.com/Eimayto/rootomato_language/master/Rootomato_Dictionary.txt";
 	var rawFile = new XMLHttpRequest();
 	rawFile.open("GET", file, false);
