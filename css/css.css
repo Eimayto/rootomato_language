@@ -8,8 +8,7 @@ body {
 }
 
 /* GENERAL BUTTON STYLING */
-button,
-button::after {
+.translate_button::after {
   -webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
   -o-transition: all 0.3s;
