@@ -1,11 +1,11 @@
 .container{
   overflow: hidden;
-  width: 200px;
+  width: 600px;
   vertical-align: middle;
   white-space: nowrap;
 }
 .container input#input{
-  width: 200px;
+  width: 600px;
   height: auto;
   background: #2b303b;
   border: none;
