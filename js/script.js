@@ -12,6 +12,15 @@ function trans(){
 	return 0;
 }
 
+function paste(){
+	var t = document.createElement("textarea");
+	document.body.appendChild(t);
+	t.value = document.getElementById('output').value;
+	t.select();
+	document.execCommand('copy');
+	document.body.removeChild(t);
+}
+
 window.onload = function(){
 	var print = "<table border='1'><tr><th>루토마토어</th><th>한국어</th></tr>";
 	for(var i = 0; i < dic.length; i++){
