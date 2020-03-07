@@ -8,6 +8,7 @@ function translate(){
 		}
 	}
 	document.getElementById('input').innerHTML = message;
+	return 0;
 }
 
 window.onload = function(){
