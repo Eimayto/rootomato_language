@@ -7,7 +7,7 @@ function trans(){
 			message = message.replace(dic[i][1],dic[i][0]);
 		}
 	}
-	document.getElementById('input').innerHTML = message;
+	document.getElementById('output').value = message;
 	return 0;
 }
 
@@ -18,5 +18,4 @@ window.onload = function(){
 	}
 	print = print+"</table>";
 	document.getElementById('table').innerHTML = print;
-	trans();
 }
