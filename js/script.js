@@ -7,3 +7,12 @@ window.onload = function(){
 	print = print+"</table>";
 	document.getElementById('table').innerHTML = print;
 }
+function translate(){
+	var message = document.getElementById('input').value;
+	for(var i = 0; i < dic.length; i++){
+		while(new RegExp(dic[i][1]).test(message)){
+			message = message.replace(dic[i][1],dic[i][0]);
+		}
+	}
+	document.getElementById('input').innerHTML = message;
+}
