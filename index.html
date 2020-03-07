@@ -28,7 +28,15 @@
 </head>
   <body>
     <h1>루토마토어 대사전</h1><br>
-    <p><textarea id="input" placeholder="한국어를 여기에 입력해주세요" style="width:600px;height:200px;font-size:20px;"></textarea><input type=button value="변환" onClick="translate()"></p>
+    <p><textarea id="input" placeholder="한국어를 여기에 입력해주세요" style="width:600px;height:200px;font-size:20px;"></textarea><input type=button value="변환" onClick="translate()"><script>function translate(){
+	var message = document.getElementById('input').value;
+	for(var i = 0; i < dic.length; i++){
+		while(new RegExp(dic[i][1]).test(message)){
+			message = message.replace(dic[i][1],dic[i][0]);
+		}
+	}
+	document.getElementById('input').innerHTML = message;
+        }</script></p>
      <p><textarea id="output" style="width:600px;height:200px;font-size:20px;" readonly></textarea></p>
     <div id='table'></div>
     <br>
