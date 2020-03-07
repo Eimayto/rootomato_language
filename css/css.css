@@ -3,7 +3,7 @@ body {
   font-size: 62.5%;
 }
 
-.container {
+translate_button.container {
   padding: 2em;
 }
 
@@ -49,7 +49,7 @@ button:hover {
   width: 0;
 }
 
-.btn-3:hover:after {
+translate_button.btn-3:hover:after {
   height: 100%;
   left: 0;
   top: 0;
