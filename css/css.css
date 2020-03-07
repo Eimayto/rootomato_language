@@ -21,3 +21,9 @@
 	position:relative;
 	top:1px;
 }
+body{
+	background-image:url('image.png');
+}
+#table{
+	background-color: #ffff
+}
