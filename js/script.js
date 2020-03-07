@@ -17,4 +17,5 @@ window.onload = function(){
 	}
 	print = print+"</table>";
 	document.getElementById('table').innerHTML = print;
+	translate();
 }
