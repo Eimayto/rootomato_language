@@ -13,7 +13,7 @@ function trans(){
 }
 
 window.onload = function(){
-	var print = "<table border='1'>";
+	var print = "<table border='1'><tr><th>루토마토어</th><th>한국어</th></tr>";
 	for(var i = 0; i < dic.length; i++){
 		print = print+"<tr><th>"+String(dic[i][0])+"</th><th>"+String(dic[i][1])+"</th></tr>";
 	}
